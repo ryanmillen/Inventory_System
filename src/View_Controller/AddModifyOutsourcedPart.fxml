@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="AddModifyOutsourcedPart" prefHeight="400.0" prefWidth="500.0" style="-fx-background-color: gainsboro;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View_Controller.AddModifyOutsourcedPartController">
+   <children>
+      <Label layoutX="34.0" layoutY="36.0" text="Add Part" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="10.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="inhouseRadio" layoutX="140.0" layoutY="22.0" mnemonicParsing="false" onAction="#inhousePart" text="In-House" AnchorPane.bottomAnchor="373.0" AnchorPane.leftAnchor="155.0" AnchorPane.rightAnchor="275.0" AnchorPane.topAnchor="10.0" />
+      <RadioButton fx:id="outsourcedRadio" layoutX="306.0" layoutY="22.0" mnemonicParsing="false" onAction="#outsourcedPart" text="Outsourced" AnchorPane.bottomAnchor="373.0" AnchorPane.leftAnchor="317.0" AnchorPane.rightAnchor="100.0" AnchorPane.topAnchor="10.0" />
+      <Label layoutX="69.0" layoutY="65.0" text="ID" AnchorPane.leftAnchor="70.0" AnchorPane.topAnchor="50.0" />
+      <Label layoutX="69.0" layoutY="112.0" text="Name" AnchorPane.leftAnchor="70.0" AnchorPane.topAnchor="100.0" />
+      <Label layoutX="69.0" layoutY="155.0" text="Inventory" AnchorPane.leftAnchor="70.0" AnchorPane.topAnchor="150.0" />
+      <Label layoutX="69.0" layoutY="192.0" text="Price/Cost" AnchorPane.leftAnchor="70.0" AnchorPane.topAnchor="200.0" />
+      <Label layoutX="69.0" layoutY="240.0" text="Max" AnchorPane.leftAnchor="70.0" AnchorPane.topAnchor="250.0" />
+      <Label layoutX="69.0" layoutY="290.0" text="Company Name" AnchorPane.leftAnchor="70.0" AnchorPane.topAnchor="300.0" />
+      <TextField fx:id="idField" editable="false" layoutX="176.0" layoutY="46.0" text="Auto Generated" AnchorPane.leftAnchor="175.0" AnchorPane.topAnchor="50.0" />
+      <TextField fx:id="nameField" layoutX="176.0" layoutY="96.0" text="name" AnchorPane.leftAnchor="175.0" AnchorPane.topAnchor="100.0" />
+      <TextField fx:id="inventoryField" layoutX="176.0" layoutY="155.0" text="0" AnchorPane.leftAnchor="175.0" AnchorPane.topAnchor="150.0" />
+      <TextField fx:id="priceField" layoutX="176.0" layoutY="196.0" text="0.00" AnchorPane.leftAnchor="175.0" AnchorPane.topAnchor="200.0" />
+      <TextField fx:id="maxField" layoutX="176.0" layoutY="246.0" prefHeight="25.0" prefWidth="75.0" text="0" AnchorPane.leftAnchor="175.0" AnchorPane.topAnchor="250.0" />
+      <TextField fx:id="minField" layoutX="307.0" layoutY="250.0" prefHeight="25.0" prefWidth="75.0" text="0" AnchorPane.leftAnchor="300.0" AnchorPane.topAnchor="250.0" />
+      <TextField fx:id="companyField" layoutX="176.0" layoutY="296.0" prefHeight="25.0" prefWidth="110.0" text="name" AnchorPane.leftAnchor="175.0" AnchorPane.topAnchor="300.0" />
+      <Label layoutX="264.0" layoutY="250.0" text="Min" />
+      <ButtonBar layoutX="275.0" layoutY="333.0" prefHeight="40.0" prefWidth="200.0" AnchorPane.bottomAnchor="25.0" AnchorPane.rightAnchor="25.0">
+         <buttons>
+            <Button mnemonicParsing="false" onAction="#saveOutsourcedPart" text="Save" />
+            <Button mnemonicParsing="false" onAction="#cancelOutsourcedPart" text="Cancel" />
+         </buttons>
+      </ButtonBar>
+   </children>
+</AnchorPane>
